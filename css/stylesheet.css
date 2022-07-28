@@ -1,0 +1,544 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-color: rgb(81, 202, 250);
+}
+
+.col .col-6{
+  background-color: rgb(81, 202, 250);
+}
+
+.quote1{
+  text-align: center;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(81, 202, 250);
+  color: black;
+}
+
+.address{
+  text-align: center;
+  background-color: rgb(81, 202, 250);
+}
+
+.navbar {
+  display:flex;
+  background-color: rgb(72, 72, 207);
+}
+
+
+
+.navbar a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration:none;
+  text-align: center;
+}
+
+ 
+
+.navbar a:hover {
+  background-color: rgb(207, 176, 0);
+  color: white;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+
+
+.left {
+  flex: 30%;
+  background-color: rgb(64, 159, 197);
+  padding: 20px 10px 20px 50px;
+}
+
+.left ol li{
+  list-style: disc;
+} 
+
+.main {
+  flex: 70%;
+  background-color: rgb(81, 202, 250);
+  padding: 30px;
+}
+  
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(64, 159, 197);
+}
+  
+.center{
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+nav.sticky {
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: rgb(72, 72, 207);
+  color: white;
+  z-index: +3;
+}
+
+.nav-item .nav-link{
+  color: black;
+  background-color: rgb(64, 159, 197);
+}
+
+
+table td{
+  text-align: center;
+}
+
+table, tr, th, td {
+  border: 3px ridge rgb(156, 156, 156);
+  text-align: center;
+  vertical-align: middle;
+  background: rgb(145, 186, 240)
+}
+
+.pborder{
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  border: rgb(156, 156, 156) ridge 3px;
+  background: rgb(145, 186, 240)
+}
+
+h2,h3,h4{
+  text-align: center;
+}
+  
+
+#main{
+  background-color: wheat;
+}
+
+iframe{
+  width: 560px;
+  height: 315px;
+  border: 0px;
+  margin: 5px;
+  
+}
+/*footer social icons */
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left:0 !important;
+  padding: 0;
+}
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/*footer social icons */
+.social-network a.icoTwitch:hover {
+  background-color:#6441a5;
+}
+.social-network a.icoYoutube:hover {
+  background-color:#FF0000;
+}
+.social-network a.icoRss:hover {
+  background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+  background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+  background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+  background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+  background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+  background-color:#007bb7;
+}
+.social-network a.icoInstagram:hover {
+  background-color: orangered;
+}
+.social-network a.icoDiscord:hover {
+  background-color: #7289DA;
+}
+.social-network a.icoRss:hover i, a.icoDiscord:hover i, a.icoTwitch:hover i, a.icoYoutube:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i, .social-network a.icoInstagram:hover i {
+  color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+  color:#44BCDD;
+}
+
+.social-circle li a {
+  display:inline-block;
+  position:relative;
+  margin:0 auto 0 auto;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  text-align:center;
+  width: 50px;
+  height: 50px;
+  font-size:20px;
+}
+.social-circle li i {
+  margin:0;
+  line-height:50px;
+  text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.social-circle i {
+  color: black;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+  }
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0,0,0,0);
+}
+.card{
+  background-color: rgb(64, 159, 197);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.span4 img {
+  margin-right: 10px;
+}
+.span4 .img-left {
+  float: left;
+}
+.span4 .img-right {
+  float: right;
+}
+/* external css: flickity.css */
+/* force scrollbar, not necessary, but may reduce gaps. Setting a max-height on .carousel also works */
+html { overflow-y: scroll; }
+
+.carousel {
+  background: rgb(81, 202, 250);
+}
+
+.carousel img {
+  display: block;
+  height: 400px;
+}
+
+textarea {
+  height: 180px;
+  width: auto;
+}
+
+form input,
+textarea {
+  display: block;
+  border: 2px solid #05386B;
+  padding: 5px;
+  width: 500px;
+  margin-top: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.options input,
+.options label {
+  margin: 0px;
+  padding: 0px;
+}
+
+.options input {
+  display: inline;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: -50px;
+
+}
+
+.submit {
+  width: 190px;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: #05386B;
+  color: white;
+}
+
+address {
+  margin: 25px;
+}
+
+.list-group-item{
+  background-color: rgb(64, 159, 197);
+}
+.bs-calltoaction{
+  position: relative;
+  width:auto;
+  padding: 15px 25px;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+  .bs-calltoaction > .row{
+      display:table;
+      width: calc(100% + 30px);
+  }
+   
+      .bs-calltoaction > .row > [class^="col-"],
+      .bs-calltoaction > .row > [class*=" col-"]{
+          float:none;
+          display:table-cell;
+          vertical-align:middle;
+      }
+
+          .cta-contents{
+              padding-top: 10px;
+              padding-bottom: 10px;
+          }
+
+              .cta-title{
+                  margin: 0 auto 15px;
+                  padding: 0;
+              }
+
+              .cta-desc{
+                  padding: 0;
+              }
+
+              .cta-desc p:last-child{
+                  margin-bottom: 0;
+              }
+
+          .cta-button{
+              padding-top: 10px;
+              padding-bottom: 10px;
+          }
+
+@media (max-width: 991px){
+  .bs-calltoaction > .row{
+      display:block;
+      width: auto;
+  }
+
+      .bs-calltoaction > .row > [class^="col-"],
+      .bs-calltoaction > .row > [class*=" col-"]{
+          float:none;
+          display:block;
+          vertical-align:middle;
+          position: relative;
+      }
+
+      .cta-contents{
+          text-align: center;
+      }
+}
+
+.bs-calltoaction.bs-calltoaction-default{
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.bs-calltoaction.bs-calltoaction-primary{
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.bs-calltoaction.bs-calltoaction-info{
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.bs-calltoaction.bs-calltoaction-success{
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.bs-calltoaction.bs-calltoaction-warning{
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.bs-calltoaction.bs-calltoaction-danger{
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.bs-calltoaction.bs-calltoaction-primary .cta-button .btn,
+.bs-calltoaction.bs-calltoaction-info .cta-button .btn,
+.bs-calltoaction.bs-calltoaction-success .cta-button .btn,
+.bs-calltoaction.bs-calltoaction-warning .cta-button .btn,
+.bs-calltoaction.bs-calltoaction-danger .cta-button .btn{
+  border-color:#fff;
+}
